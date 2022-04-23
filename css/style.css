@@ -3,11 +3,18 @@
     src: url(../ui/fonts/Summer-Vibes-OTF.otf);
 }
 
+@font-face {
+    font-family: myFont;
+    src: url(../ui/fonts/OpenSans-Regular.ttf);
+}
+
 :root{
     --header: #485b6c;
     --left-panel: #27344b;
     --inner-left-panel: #383e48;
     --inner-right-panel: #f2f7f8;
+    --left-panel-label: #404b56;
+    --left-panel-label-hover: #778593;
 }
 
 * {
@@ -17,21 +24,61 @@
 }
 
 #wrapper{
-    max-width: 900px;
-    min-height: 500px;
+    max-width: 1200px;
+    min-height: 800px;
     display: flex;
     margin: auto;
     color: white;
+    font-family: myFont;
+}
+
+#wrapper div span{
+    font-size: 12px;
+    opacity: 0.5;
 }
 
 #left_panel{
-    min-height: 400px;
+    min-height: 800px;
     background-color: var(--left-panel);
     flex: 1;
+    text-align: center;
+}
+
+#profile_image{
+    width: 55%;
+    border: solid thin white;
+    border-radius: 50%;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#left_panel div{
+    padding: 10px;
+}
+
+#left_panel label {
+    width: 100%;
+    height: 30px;
+    display: block;
+    font-size: 13px;
+    background-color: var(--left-panel-label);
+    border-bottom: solid thin #ffffff55;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+#left_panel label:hover {
+    background-color: var(--left-panel-label-hover);
+}
+
+#left_panel label img{
+    float: right;
+    width: 25px;
 }
 
 #right_panel {
-    min-height: 400px;
+    min-height: 800px;
     flex: 4;
 }
 
@@ -47,14 +94,27 @@
     display: flex;
 }
 
+#container input{
+    display: none;
+}
+
 #inner_left_panel{
     background-color: var(--inner-left-panel);
-    min-height: 430px;
+    min-height: 730px;
     flex: 1;
 }
 
 #inner_right_panel {
     background-color: var(--inner-right-panel);
-    min-height: 430px;
+    min-height: 730px;
     flex: 2;
+    transition: all .5s ease;
+}
+
+#radio_contacts:checked ~ #inner_right_panel{
+    flex: 0;
+}
+
+#radio_settings:checked~#inner_right_panel {
+    flex: 0;
 }
