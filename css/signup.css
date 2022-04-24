@@ -1,0 +1,86 @@
+@font-face {
+    font-family: headFont;
+    src: url(../ui/fonts/Summer-Vibes-OTF.otf);
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../ui/fonts/OpenSans-Regular.ttf);
+}
+
+:root {
+    --header: #485b6c;
+    --left-panel: #27344b;
+    --inner-left-panel: #383e48;
+    --inner-right-panel: #f2f7f8;
+    --left-panel-label: #404b56;
+    --left-panel-label-hover: #778593;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    max-width: 1200px;
+    min-height: 800px;
+    margin: auto;
+    color: grey;
+    font-family: myFont;
+    font-size: 13px;
+}
+
+#header {
+    background-color: var(--header);
+    font-size: 40px;
+    text-align: center;
+    font-family: headFont;
+    width: 100%;
+    color: white;
+}
+
+#header div{
+    font-size: 20px;
+    font-family: myFont;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+form{
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type=text], input[type=password], input[type=submit]{
+    padding: 10px;
+    margin: 10px;
+    width: 98%;
+    border-radius: 5px;
+    border: solid 1px grey;
+}
+
+input[type=submit]{
+    width: 98%;
+    cursor: pointer;
+    background-color: #2b5488;
+    color: white;
+}
+
+form div{
+    padding: 10px;
+}
+
+form .gender{
+    font-size: 16px;
+    color: #4f688c;
+}
+
+input[type=radio]{
+    transform: scale(1.2);
+    cursor: pointer;
+    margin-left: 5px;
+}
