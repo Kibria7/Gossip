@@ -23,7 +23,7 @@
             </div>
             <input type="Password" name="password" placeholder="Password"><br>
             <input type="password" name="password2" placeholder="Retype Password"><br>
-            <input type="submit" value="Sign Up" id="signup_button"><br>
+            <input type="button" value="Sign Up" id="signup_button"><br>
         </form>
     </div>
     <script type="text/javascript" src="js/signup.js"></script>

@@ -55,7 +55,7 @@ form{
     max-width: 400px;
 }
 
-input[type=text], input[type=password], input[type=submit]{
+input[type=text], input[type=password], input[type=button]{
     padding: 10px;
     margin: 10px;
     width: 98%;
@@ -63,7 +63,7 @@ input[type=text], input[type=password], input[type=submit]{
     border: solid 1px grey;
 }
 
-input[type=submit]{
+input[type=button]{
     width: 98%;
     cursor: pointer;
     background-color: #2b5488;

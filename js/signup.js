@@ -33,6 +33,23 @@ function collect_data(){
                 break;
         }
     }
+    
+    send_data(data, "signup");
+    
+}
 
-    alert(JSON.stringify(data));
+function send_data(data, type){
+    var xml = new XMLHttpRequest();
+    
+    xml.onload = function(){
+        if(xml.readyState == 4 || xml.status == 200){
+               alert(xml.responseText);
+        }
+    }
+
+    data.data_type = type;
+    var data_string = JSON.stringify(data);
+    
+    xml.open("POST", "api.php", true);
+    xml.send(data_string);
 }
