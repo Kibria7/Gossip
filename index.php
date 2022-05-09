@@ -10,12 +10,12 @@
 <body>
     <div id="wrapper">
         <div id="left_panel">
-            <div>
-                <img id="profile_image" src="./ui/images/user3.jpg" alt="">
+            <div id="user_info">
+                <img id="profile_image" src="./ui/images/user.jpg" alt="">
                 <br>
-                Kelly Hartmann
+                <span id="username">Username</span>
                 <br>
-                <span>kellyhartmann@gmail.com</span>
+                <span id="email">email@gmail.com</span>
 
                 <br>
                 <br>

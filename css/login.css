@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: headFont;
     src: url(../ui/fonts/Summer-Vibes-OTF.otf);
 }
@@ -41,14 +41,14 @@
     color: white;
 }
 
-#header div{
+#header div {
     font-size: 20px;
     font-family: myFont;
     margin: 10px;
     padding-bottom: 10px;
 }
 
-#error{
+#error {
     text-align: center;
     font-size: 1em;
     max-width: 60%;
@@ -58,14 +58,16 @@
     display: none;
 }
 
-form{
+form {
     margin: auto;
     padding: 10px;
     width: 100%;
     max-width: 400px;
 }
 
-input[type=text], input[type=password], input[type=button]{
+input[type=text],
+input[type=password],
+input[type=button] {
     padding: 10px;
     margin: 10px;
     width: 98%;
@@ -73,24 +75,24 @@ input[type=text], input[type=password], input[type=button]{
     border: solid 1px grey;
 }
 
-input[type=button]{
+input[type=button] {
     width: 98%;
     cursor: pointer;
     background-color: #2b5488;
     color: white;
 }
 
-form div{
+form div {
     padding: 10px;
 }
 
-form .gender{
+form .gender {
     font-size: 16px;
     color: #4f688c;
 }
 
-input[type=radio]{
+input[type=radio] {
     transform: scale(1.2);
     cursor: pointer;
     margin-left: 5px;
-}
+} */

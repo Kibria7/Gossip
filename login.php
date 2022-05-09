@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,4 +30,4 @@
     </div>
     <script type="text/javascript" src="js/signup.js"></script>
 </body>
-</html>
+</html> -->
