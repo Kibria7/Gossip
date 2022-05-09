@@ -6,9 +6,11 @@ $info = (Object)[];
 
 //check if logged in
 if(!isset($_SESSION['userid'])){
-    $info->logged_in = false;
-    echo json_encode($info);
-    die;
+    if(isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type != "login"){
+        $info->logged_in = false;
+        echo json_encode($info);
+        die;
+    }
 }
 require_once("classes/autoload.php");
 $DB = new Database();
@@ -24,6 +26,9 @@ if(isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "signup"){
     //signup
     include("includes/signup.php");
 
+}else if(isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "login"){
+    //login
+    include("includes/login.php");
 }else if(isset($DATA_OBJ->data_type) && $DATA_OBJ->data_type == "user_info"){
     echo "user_info";
 }

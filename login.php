@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,23 +11,17 @@
     <div id="wrapper">
         <div id="header">
             Gossip
-            <div>Sign Up</div>
+            <div>Login</div>
         </div>
         <!-- <div id="error">some text</div> -->
         <form action="" id="myform">
-            <input type="text" name="username" placeholder="Username"><br>
             <input type="text" name="email" placeholder="Email"><br>
-            <div>
-                <span class="gender">Gender:</span><br>
-                <input type="radio" name="gender" value="Male"> Male<br>
-                <input type="radio" name="gender" value="Female"> Female<br>
-            </div>
             <input type="Password" name="password" placeholder="Password"><br>
-            <input type="password" name="password2" placeholder="Retype Password"><br>
-            <input type="button" value="Sign Up" id="signup_button"><br>
+            <br>
+            <input type="button" value="Login" id="login_button"><br>
         </form>
         <div id="error"></div>
     </div>
-    <script type="text/javascript" src="js/signup.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
-</html> -->
+</html>

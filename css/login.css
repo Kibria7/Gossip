@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: headFont;
     src: url(../ui/fonts/Summer-Vibes-OTF.otf);
 }
@@ -95,4 +95,4 @@ input[type=radio] {
     transform: scale(1.2);
     cursor: pointer;
     margin-left: 5px;
-} */
+}
